@@ -138,6 +138,28 @@ footer {
   padding: 20px 0;
   border-top: 1px solid black;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  padding: 5px 10px;
+  background-color: var(--title-color);
+  border-radius: 8px;
+  transition: all 0.7s ease;
+  z-index: 1;
+  pointer-events: none; /*Kein versehendlicher Klick auf "Geisterbutton"*/
+}
+
+.back-to-top:hover {
+  transform: scale(0.9);
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto; /*Button wird wieder anklickbar sobald er erscheint*/
+}
 /*
 .card__data {
   width: 280px;
