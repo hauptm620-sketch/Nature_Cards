@@ -292,22 +292,23 @@ footer {
     top: 100%; /* Direkt unter dem Header platzieren */
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(131, 129, 129, 0.9);
     backdrop-filter: blur(10px);
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 16px 16px;
 
     /* 2. Der unsichtbare Startzustand (leicht nach oben versetzt) */
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-15px);
+    transform: translateY(-150px);
 
     /* 3. Hier stellst du die Geschwindigkeit & Weichheit ein */
     transition:
       opacity 0.5s ease,
-      transform 0.3s ease,
-      visibility 0.3s;
+      transform 0.4s ease,
+      visibility 0.2s;
   }
 
   /* Wenn JavaScript die Klasse "active" setzt, zeigen wir das Menü */
