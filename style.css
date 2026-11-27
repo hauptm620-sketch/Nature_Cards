@@ -153,6 +153,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .burger span {
@@ -283,6 +284,7 @@ footer {
 
   .burger {
     display: flex; /* Burger auf kleinen Bildschirmen anzeigen */
+    -webkit-tap-highlight-color: transparent;
   }
 
   .link {
