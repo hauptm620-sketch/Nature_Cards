@@ -38,3 +38,17 @@ backToTopBtn.addEventListener("click", () => {
   // 1500 = 1,5 Sekunden Dauer (für langsamer z. B. 2500 eintragen)
   scrollToTopSlow(2200);
 });
+
+
+
+
+// 1. Elemente aus dem HTML greifen
+  const burgerBtn = document.getElementById('burger-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  // 2. Auf Klick warten
+  burgerBtn.addEventListener('click', () => {
+    // 3. Klasse "active" hinzufügen oder entfernen
+    burgerBtn.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
